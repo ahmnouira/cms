@@ -16,17 +16,32 @@ import org.springframework.web.bind.annotation.RestController;
 
 import ahmnouria.cms.domain.models.Category;
 import ahmnouria.cms.domain.vo.CategoryRequest;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 
 @RestController
 @RequestMapping("/api/category")
+@Api(tags = "category", description = "Category API")
 public class CategoryResource {
 
     @GetMapping(value = "/{id}")
+    @ApiOperation(value = "Find category")
+    @ApiResponses(value = {
+        @ApiResponse(code = 200, message = "Category found"),
+        @ApiResponse(code = 404, message = "Category not found"),
+    })
     public ResponseEntity<Category> getCategory(@PathVariable("id") String id){
         return ResponseEntity.ok(new Category()); 
     }
 
     @GetMapping
+    @ApiOperation(value = "List categories", notes = "List all categories")
+    @ApiResponses(value =   {
+        @ApiResponse(code = 200, message = "Categories found"), 
+        @ApiResponse(code  = 4040, message = "Category not found")
+    })
     public ResponseEntity<List<Category>> getCategoires() {
         return ResponseEntity.ok(Arrays.asList(new Category(), new Category())); 
     }
