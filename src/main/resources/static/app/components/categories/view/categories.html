@@ -1,0 +1,25 @@
+<div class="page-header">
+    <h1>Categoires</h1>
+</div>
+
+<div class="row">
+    <div class="container">
+        <div class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="category in categories">
+                    <td>{{ $index + 1 }}</td>
+                    <td>{{category.name}}</td>
+                </tr>
+            </tbody>
+        </div>
+    </div>
+</div>
+
+
+<a href="#create-category" class="btn btn-primary">New Catgeory</a>
