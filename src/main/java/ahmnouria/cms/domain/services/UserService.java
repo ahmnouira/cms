@@ -1,11 +1,12 @@
-package com.ahmnouria.cms.domain.services;
+package ahmnouria.cms.domain.services;
 import java.util.List;
 import java.util.UUID;
-import com.ahmnouria.cms.domain.models.User;
-import com.ahmnouria.cms.domain.respositories.UserRepository;
-import com.ahmnouria.cms.domain.vo.UserRequest;
 
 import org.springframework.stereotype.Service;
+
+import ahmnouria.cms.domain.models.User;
+import ahmnouria.cms.domain.respositories.UserRepository;
+import ahmnouria.cms.domain.vo.UserRequest;
 
 @Service
 public class UserService {

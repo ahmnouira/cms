@@ -1,6 +1,5 @@
-package com.ahmnouria.cms.domain.vo; 
-import com.ahmnouria.cms.domain.models.Role;
-
+package ahmnouria.cms.domain.vo; 
+import ahmnouria.cms.domain.models.Role;
 import lombok.Data;
 
 @Data

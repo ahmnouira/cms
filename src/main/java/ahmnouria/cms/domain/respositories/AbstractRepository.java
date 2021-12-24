@@ -1,4 +1,4 @@
-package com.ahmnouria.cms.domain.respositories;
+package ahmnouria.cms.domain.respositories;
 
 import java.util.ArrayList;
 import java.util.Iterator;

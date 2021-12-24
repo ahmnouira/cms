@@ -1,10 +1,9 @@
-package com.ahmnouria.cms.domain.vo;
+package ahmnouria.cms.domain.vo;
 
 import java.util.Set;
 
-import com.ahmnouria.cms.domain.models.Category;
-import com.ahmnouria.cms.domain.models.Tag;
-
+import ahmnouria.cms.domain.models.Category;
+import ahmnouria.cms.domain.models.Tag;
 import lombok.Data; 
 
 

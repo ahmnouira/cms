@@ -1,4 +1,4 @@
-package com.ahmnouria.cms.domain.vo;
+package ahmnouria.cms.domain.vo;
 
 import lombok.Data;
 

@@ -1,10 +1,7 @@
-package com.ahmnouria.cms.domain.resources; 
+package ahmnouria.cms.domain.resources; 
 
 import java.util.Arrays;
 import java.util.List;
-
-import com.ahmnouria.cms.domain.models.User;
-import com.ahmnouria.cms.domain.vo.UserRequest;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +13,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+
+import ahmnouria.cms.domain.models.User;
+import ahmnouria.cms.domain.vo.UserRequest;
 
 @RestController
 @RequestMapping("/api/user")

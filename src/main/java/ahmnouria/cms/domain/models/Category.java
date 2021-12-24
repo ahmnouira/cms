@@ -1,4 +1,4 @@
-package com.ahmnouria.cms.domain.models;
+package ahmnouria.cms.domain.models;
 
 import lombok.Data;
 

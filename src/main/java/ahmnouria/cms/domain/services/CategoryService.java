@@ -1,11 +1,11 @@
-package com.ahmnouria.cms.domain.services;
+package ahmnouria.cms.domain.services;
 import java.util.List;
 
-import com.ahmnouria.cms.domain.models.Category;
-import com.ahmnouria.cms.domain.respositories.CategroyRepository;
-import com.ahmnouria.cms.domain.vo.CategoryRequest;
-
 import org.springframework.stereotype.Service;
+
+import ahmnouria.cms.domain.models.Category;
+import ahmnouria.cms.domain.respositories.CategroyRepository;
+import ahmnouria.cms.domain.vo.CategoryRequest;
 
 
 @Service
